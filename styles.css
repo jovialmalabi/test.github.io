@@ -1,0 +1,102 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #001f3f;
+    color: #fff;
+    background-image: url('stars.png');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.character {
+    text-align: center;
+    margin: 10px;
+}
+
+.character img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.story {
+    text-align: center;
+    padding: 20px;
+}
+
+.story h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.story p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.story img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Responsive styles for 9:16 phone format */
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .characters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .story img {
+        width: 150px;
+    }
+}
